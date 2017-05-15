@@ -2,7 +2,7 @@
 public var spawnPrefab : Transform;
 
 function Start () {
-	InvokeRepeating("Spawn", 5.0f, 5.0f);
+	InvokeRepeating("Spawn", 10.0f, 10.0f);
 }
 
 function Spawn() {
