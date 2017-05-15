@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpawnSpawn.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\InitiateText.js">
     <Files>
-      <File FileName="Assets\SpawnSpawn.js" Line="5" Column="29" />
+      <File FileName="Assets\InitiateText.js" Line="4" Column="22" />
+      <File FileName="Assets\PewDie.js" Line="1" Column="1" />
+      <File FileName="Assets\PlayerShoot.js" Line="1" Column="1" />
+      <File FileName="Assets\SpawnSpawn.js" Line="1" Column="1" />
       <File FileName="Assets\RotatePlease.js" Line="1" Column="1" />
       <File FileName="Assets\BadSpawn.js" Line="1" Column="1" />
-      <File FileName="Assets\PlayerShoot.js" Line="1" Column="1" />
       <File FileName="Assets\PlayerDead.js" Line="1" Column="1" />
       <File FileName="Assets\PlayerMove.js" Line="1" Column="1" />
       <File FileName="Assets\BadMove.js" Line="1" Column="1" />
