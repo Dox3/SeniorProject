@@ -8,7 +8,7 @@ function OnCollisionEnter2D(coll: Collision2D) {
 	if (coll.gameObject.tag == "Bad")
 		hp -= 10;
 		if (hp == 0)
-			Destroy(gameObject);
+			Destroy(gameObject, 0.1f);
 }
 
 
