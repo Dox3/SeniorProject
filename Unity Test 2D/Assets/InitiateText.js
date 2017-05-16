@@ -5,5 +5,7 @@ function Start () {
 }
 
 function Update () {
-
+	if (GameObject.FindWithTag("Player") == null) {
+		Destroy(gameObject);
+	}
 }
