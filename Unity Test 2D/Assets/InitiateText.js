@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 function Start () {
-	Destroy(gameObject, 1.5f);
+	Destroy(gameObject, 10.0f);
 }
 
 function Update () {

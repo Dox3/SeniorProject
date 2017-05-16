@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var hp : int = 100;
+public var hp : int = 100;
 function Update () {
 }
 
