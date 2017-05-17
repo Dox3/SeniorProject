@@ -119,8 +119,10 @@ function cddown () {
 	}
 }
 function cdminus () {
-	cd -= 5;
-	if (cd < 0) {
-		cd = 0;
+	if (cd < 100) {
+		cd -= 5;
+		if (cd < 0) {
+			cd = 0;
+		}
 	}
 }

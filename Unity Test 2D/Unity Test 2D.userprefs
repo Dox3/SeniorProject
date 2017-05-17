@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BadMove.js">
     <Files>
       <File FileName="Assets\RotatePlease.js" Line="4" Column="21" />
-      <File FileName="Assets\PlayerShoot.js" Line="107" Column="3" />
-      <File FileName="Assets\CdCounter.js" Line="15" Column="3" />
+      <File FileName="Assets\PlayerShoot.js" Line="116" Column="86" />
+      <File FileName="Assets\CdCounter.js" Line="13" Column="10" />
       <File FileName="Assets\SpawnSpawn.js" Line="1" Column="1" />
       <File FileName="Assets\HPCounter.js" Line="10" Column="48" />
       <File FileName="Assets\BadMove.js" Line="13" Column="47" />

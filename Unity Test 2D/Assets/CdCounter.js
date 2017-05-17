@@ -10,7 +10,7 @@ function Update () {
 	if (cd >= 0) {
 		this.GetComponent(UI.Text).text = "Heat: " + cd;
 	}
-	if (cd == 100) {
+	if (cd >= 100) {
 		this.GetComponent(UI.Text).text = "OVERHEAT!";
 	}
 }
