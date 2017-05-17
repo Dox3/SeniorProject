@@ -10,6 +10,6 @@ function Start () {
 function Update () {
 	transform.LookAt(target);
 	if(Vector3.Distance(transform.position,target.position) >= 0) {
-		transform.Translate(transform.forward * (4.5 * speed) * Time.deltaTime);
+		transform.Translate(transform.forward * (6 * speed) * Time.deltaTime);
 	}
 }
