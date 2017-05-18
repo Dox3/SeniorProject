@@ -6,7 +6,6 @@ function Start() {
 	Destroy(gameObject, 1.5f);
 }
 function Update () {
-	gameObject.GetComponent.<Rigidbody>().AddForce(transform.up * speed);
 }
 
 

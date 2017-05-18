@@ -8,8 +8,7 @@ function Start () {
 }
 
 function Update () {
-	transform.LookAt(target);
-	if(Vector3.Distance(transform.position,target.position) >= 0) {
-		transform.Translate(transform.forward * (6 * speed) * Time.deltaTime);
+	if(Vector2.Distance(transform.position, target.position) >= 0) {
+		transform.position = Vector2.MoveTowards(transform.position, target.position, (6 * speed) * Time.deltaTime);
 	}
 }

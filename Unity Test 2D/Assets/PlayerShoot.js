@@ -1,10 +1,11 @@
 ﻿#pragma strict
+
 public var pewPrefab : Rigidbody2D;
 var player : GameObject;
 var nerfed : boolean = true;
 var cool : boolean = true;
 var hot : boolean = true;
-var speed : int = 100;
+var speed : int = 1;
 var cd : int = 0;
 
 function Start () {
