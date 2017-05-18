@@ -1,31 +1,33 @@
 ﻿ #pragma strict
- 
- 
- 
+
  //Inspector Variables
  var playerSpeed : float = 0.1; //speed player moves
  var turnSpeed : float = 100; //speed player turns
- function Update () 
- {
+ var camera1 : Camera;
+
+ function Start () {
+ 	camera1 = GetComponent.<Camera>().main;
+ }
+ function Update () {
      Move();
  }
  
  function Move()
  {		
- 	 
-     if(Input.GetKey("up") && transform.position.y < 5)//Press up arrow key to move forward on the Y AXIS
+ 	 var screenPos : Vector3 = camera1.WorldToScreenPoint(transform.position);
+     if(Input.GetKey("up") && screenPos.y < (camera1.pixelHeight - 15)) //Press up arrow key to move up on the Y AXIS
      {
         transform.Translate(transform.up * (5 * playerSpeed) * Time.deltaTime);
      }
-     if(Input.GetKey("down") && transform.position.y > -4.5)//Press up arrow key to move forward on the Y AXIS
+     if(Input.GetKey("down") && screenPos.y > 15) //Press up arrow key to move down on the Y AXIS
      {
         transform.Translate(transform.up * (-5 * playerSpeed) * Time.deltaTime);
      }
-     if(Input.GetKey("right") && transform.position.x < 12)//Press up arrow key to move forward on the Y AXIS
+     if(Input.GetKey("right") && screenPos.x < (camera1.pixelWidth - 15)) //Press up arrow key to move right on the X AXIS
      {
         transform.Translate(transform.right * (5 * playerSpeed) * Time.deltaTime);
      }
-     if(Input.GetKey("left") && transform.position.x > -13)//Press up arrow key to move forward on the Y AXIS
+     if(Input.GetKey("left") && screenPos.x > 15) //Press up arrow key to move left on the X AXIS
      {
         transform.Translate(transform.right * (5 * -playerSpeed) * Time.deltaTime);
      }

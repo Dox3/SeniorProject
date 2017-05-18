@@ -3,7 +3,7 @@ public var badPrefab : Transform;
 var overpopulation : GameObject[];
 
 function Start () {
-	InvokeRepeating("badfeeling", 0f, 1.0f);
+	InvokeRepeating("badfeeling", 1.0f, 1.0f);
 }
 
 function Update () {
