@@ -3,6 +3,9 @@
 public var hp : int = 100;
 
 function Update () {
+	/*if(GameObject.FindWithTag("Player") == null) { 
+		SceneManagement.SceneManager.LoadScene("Game Over");
+	}*/
 }
 
 function OnCollisionEnter2D(coll: Collision2D) {
@@ -10,7 +13,7 @@ function OnCollisionEnter2D(coll: Collision2D) {
 		hp -= 10;
 		if (hp <= 0) {
 			Destroy(gameObject, 0.1f);
-			//yield WaitForSeconds(3.0f);
+			//yield WaitForSeconds(2.0f);
 			SceneManagement.SceneManager.LoadScene("Game Over");
 		}
 	}
