@@ -97,7 +97,7 @@ function pew() {
 			cd += 1;*/
 		}
 	}
-}
+
 function cdreset() {
 	if (hot) {
 		cd = 100;
