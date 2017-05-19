@@ -1,8 +1,8 @@
 ﻿#pragma strict
 public var spawnPrefab : Transform;
-
+public var spawnRepeat : int = 5;
 function Start () {
-	InvokeRepeating("Spawn", 10.0f, 10.0f);
+	InvokeRepeating("Spawn", spawnRepeat, spawnRepeat);
 }
 
 function Update () {
