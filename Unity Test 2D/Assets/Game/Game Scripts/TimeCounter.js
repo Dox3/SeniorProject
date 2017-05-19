@@ -8,8 +8,8 @@ function Update () {
 
 function minutecruncher () {
 	if (GameObject.FindWithTag("Player") != null) {
-		minutes = Mathf.Floor(Time.time/60);
-		seconds = Mathf.Floor(Time.time%60);
+		minutes = Mathf.Floor(Time.timeSinceLevelLoad/60);
+		seconds = Mathf.Floor(Time.timeSinceLevelLoad%60);
 		if (seconds < 10) {
 			this.GetComponent(UI.Text).text = "" + minutes + ":0" + seconds;
 		}

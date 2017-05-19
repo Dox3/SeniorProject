@@ -1,4 +1,5 @@
 ﻿#pragma strict
+
 var time : GameObject;
 
 function OnMouseDown () {
