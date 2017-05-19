@@ -42,7 +42,7 @@ function pew() {
 			nerfed = true;
 			cd += 1;
 		}
-		if(Input.GetKey("a")) {
+		/*if(Input.GetKey("a")) {
 			transform.localPosition = new Vector3(-0.2,0,0);
 			transform.rotation = Quaternion.Euler(0,0,90);
 			var shotsfired1 : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
@@ -94,7 +94,7 @@ function pew() {
 				yield WaitForSeconds(0.1f);
 			}
 			nerfed = true;
-			cd += 1;
+			cd += 1;*/
 		}
 	}
 }
