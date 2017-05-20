@@ -8,7 +8,7 @@ function Start () {
 }
 
 function Update () {
-	if(Vector2.Distance(transform.position, target.position) >= 0) {
+	if(Vector2.Distance(transform.position, target.position) >= 0.4) {
 		transform.position = Vector2.MoveTowards(transform.position, target.position, (5.5 * speed) * Time.deltaTime);
 	}
 }

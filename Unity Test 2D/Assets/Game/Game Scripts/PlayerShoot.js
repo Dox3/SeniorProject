@@ -27,7 +27,7 @@ function Update () {
 function pew() {
 	if(nerfed) {
 		if(Input.GetKey("w")) {
-			transform.localPosition = new Vector3(0,0.2,0);
+			transform.localPosition = new Vector3(0,0.45,0);
 			transform.rotation = Quaternion.Euler(0,0,0);
 			var shotsfired : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
 			shotsfired.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
@@ -45,9 +45,9 @@ function pew() {
 			cd += 1;
 		}
 		if(Input.GetKey("a")) {
-			transform.localPosition = new Vector3(-0.2,0,0);
+			transform.localPosition = new Vector3(-0.45,0,0);
 			transform.rotation = Quaternion.Euler(0,0,90);
-			var shotsfired1 : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
+			var shotsfired1 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired1.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
 			if (player.GetComponent(PlayerDead).hp <= 15) {
@@ -63,9 +63,9 @@ function pew() {
 			cd += 1;
 		}
 		if(Input.GetKey("s")) {
-			transform.localPosition = new Vector3(0,-0.2,0);
+			transform.localPosition = new Vector3(0,-0.45,0);
 			transform.rotation = Quaternion.Euler(0,0,180);
-			var shotsfired2 : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
+			var shotsfired2 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired2.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
 			if (player.GetComponent(PlayerDead).hp <= 15) {
@@ -81,9 +81,9 @@ function pew() {
 			cd += 1;
 		}
 		if(Input.GetKey("d")) {
-			transform.localPosition = new Vector3(0.2,0,0);
+			transform.localPosition = new Vector3(0.45,0,0);
 			transform.rotation = Quaternion.Euler(0,0,-90);
-			var shotsfired3 : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
+			var shotsfired3 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired3.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
 			if (player.GetComponent(PlayerDead).hp <= 15) {

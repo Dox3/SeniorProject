@@ -15,7 +15,7 @@ function Update () {
 function Spawn() {
 	if (limit && stop) {
 		limit = false;
-		Instantiate(spawnPrefab, new Vector3(Random.Range(-6,6), Random.Range(-4.5,4.5), 0), Quaternion.identity);
+		Instantiate(spawnPrefab, new Vector3(Random.Range(-6,6), Random.Range(-4.5,4.5), 0), Quaternion.Euler(0,0,Random.Range(0,360)));
 		yield WaitForSeconds(spawnRepeat);
 		limit = true;
 	}

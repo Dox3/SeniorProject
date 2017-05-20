@@ -15,8 +15,8 @@ function Update () {
 function slicer() {
 	if (Time.timeSinceLevelLoad >= 30.0f && isSlice && GameObject.FindWithTag("Boss") == null) {
 		isSlice = false;
-		var Slicer : GameObject = Instantiate(slicerPrefab, new Vector3(Random.Range(-6,6), Random.Range(-4.5,4.5), 0), Quaternion.identity);
-		var Dicer : GameObject = Instantiate(slicerPrefab, new Vector3(Random.Range(-6,6), Random.Range(-4.5,4.5), 0), Quaternion.identity);
+		var Slicer : GameObject = Instantiate(slicerPrefab, new Vector3(-10, Random.Range(-4.5,4.5), 0), Quaternion.identity);
+		var Dicer : GameObject = Instantiate(slicerPrefab, new Vector3(10, Random.Range(-4.5,4.5), 0), Quaternion.identity);
 		yield WaitForSeconds(15.0f);
 		isSlice = true;
 	}

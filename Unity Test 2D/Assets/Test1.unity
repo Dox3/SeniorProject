@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 1241974776374572, guid: 08bcc7aa273b9de4a821a2224700d799, type: 2}
-  slicerPrefab: {fileID: 1608093347825188, guid: c91d611ab5cb88c489355e7a0b54abd7,
+  slicerPrefab: {fileID: 1940295860885812, guid: 01528e0e1a4d3704a959a7a96ab429e1,
     type: 2}
   isSlice: 1
 --- !u!1 &773838370 stripped
@@ -999,7 +999,28 @@ Prefab:
     - target: {fileID: 114618637468223362, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
         type: 2}
       propertyPath: hp
-      value: 100
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114362558307017448, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
+        type: 2}
+      propertyPath: pewPrefab
+      value: 
+      objectReference: {fileID: 50470654904002006, guid: 0339507b8d2a9ac40bed3e3acfff3cb4,
+        type: 2}
+    - target: {fileID: 212687458933251356, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a98e8a847392c164aa1e4c509e422e1c,
+        type: 3}
+    - target: {fileID: 58238927805086606, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4915571486623046, guid: 057fcfbaa0b3d494980ae1c6e73cc997, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 057fcfbaa0b3d494980ae1c6e73cc997, type: 2}
@@ -1159,7 +1180,7 @@ Prefab:
     - target: {fileID: 114738152310510570, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
         type: 2}
       propertyPath: hp
-      value: 10
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_UsedByEffector
@@ -1233,15 +1254,13 @@ Prefab:
       propertyPath: m_Points.Array.data[3].x
       value: 0.0027168095
       objectReference: {fileID: 0}
-    - target: {fileID: 58244384376355422, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Radius
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 58244384376355422, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
         type: 2}
@@ -1256,11 +1275,16 @@ Prefab:
     - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.55862045
+      value: 0.020689964
       objectReference: {fileID: 0}
     - target: {fileID: 114454771175837854, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
         type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 60340052786825026, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+        type: 2}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
