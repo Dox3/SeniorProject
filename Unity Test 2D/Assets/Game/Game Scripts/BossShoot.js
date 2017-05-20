@@ -1,20 +1,24 @@
 ﻿#pragma strict
 
-public var diePrefab : Rigidbody2D;
-var target : Transform;
+public var diePrefab : GameObject;
 var cd : boolean = true;
 var speed : int = 1;
+var canFire : boolean = true;
 
 function Start () {
-	target = GameObject.FindWithTag("Player").transform;
-	InvokeRepeating("deathtoplayer", 0.5f, 0.5f);
 }
 
 function Update () {
-	transform.LookAt(target);
+	deathtoplayer();
 }
 
 function deathtoplayer () {
-	var shotsfired : Rigidbody2D = Instantiate(diePrefab, transform.position, transform.rotation);
-	shotsfired.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
+	if (canFire) {
+		canFire = false;
+		var shotsfired : GameObject = Instantiate(diePrefab, transform.position, Quaternion.identity);
+		shotsfired.GetComponent(Rigidbody2D).AddForce(transform.up * (400 * speed));
+		yield WaitForSeconds(0.1f);
+		canFire = true;
+		
+	}
 }

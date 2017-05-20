@@ -1,7 +1,8 @@
 ﻿#pragma strict
+public var delete : float = 5.0;
 
 function Start () {
-	Destroy(gameObject, 5.0f);
+	Destroy(gameObject, delete);
 }
 
 function Update () {

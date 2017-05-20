@@ -5,7 +5,9 @@ var speed : float = 1;
 function Start() {
 	Destroy(gameObject, 1.5f);
 }
+
 function Update () {
+
 }
 
 

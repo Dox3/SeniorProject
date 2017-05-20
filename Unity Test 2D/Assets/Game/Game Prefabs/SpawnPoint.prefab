@@ -92,6 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badPrefab: {fileID: 495244, guid: 0a0b497b36e98b24299b72889affa8fb, type: 2}
   overpopulation: []
+  limit: 1
+  stop: 1
 --- !u!114 &114738152310510570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,9 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a6711960c7b0c4c851c57eed611736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 3
   player: {fileID: 0}
-  script: {fileID: 0}
 --- !u!212 &212623002847338560
 SpriteRenderer:
   m_ObjectHideFlags: 1

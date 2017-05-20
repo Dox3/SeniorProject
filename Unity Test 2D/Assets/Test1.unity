@@ -167,7 +167,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -285,7 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d4c622804a7bd41bfac340d110a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossPrefab: {fileID: 1373170173421624, guid: 5d5263ea9e031bb4a835683f4b2ba00b, type: 2}
+  bossPrefab: {fileID: 1241974776374572, guid: 08bcc7aa273b9de4a821a2224700d799, type: 2}
+  minions: []
 --- !u!1 &773838370 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1587323922441740, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
@@ -402,6 +403,11 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_FontSize
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045814688613490, guid: cc9af138cf1634b48b5cea0e4e7d7abf,
+        type: 2}
+      propertyPath: delete
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc9af138cf1634b48b5cea0e4e7d7abf, type: 2}
@@ -991,7 +997,7 @@ Prefab:
     - target: {fileID: 114618637468223362, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
         type: 2}
       propertyPath: hp
-      value: 10000
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 057fcfbaa0b3d494980ae1c6e73cc997, type: 2}
@@ -1234,6 +1240,21 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.84827566
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fcff59e6c1d4674a92fb456d7fc8696, type: 2}
