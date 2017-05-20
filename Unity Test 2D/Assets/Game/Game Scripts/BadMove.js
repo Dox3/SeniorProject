@@ -9,6 +9,6 @@ function Start () {
 
 function Update () {
 	if(Vector2.Distance(transform.position, target.position) >= 0) {
-		transform.position = Vector2.MoveTowards(transform.position, target.position, (6 * speed) * Time.deltaTime);
+		transform.position = Vector2.MoveTowards(transform.position, target.position, (5.5 * speed) * Time.deltaTime);
 	}
 }

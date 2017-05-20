@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 58244384376355422}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: Bad
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   player: {fileID: 0}
+  script: {fileID: 0}
 --- !u!212 &212623002847338560
 SpriteRenderer:
   m_ObjectHideFlags: 1

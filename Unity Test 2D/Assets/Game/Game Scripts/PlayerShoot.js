@@ -42,7 +42,7 @@ function pew() {
 			nerfed = true;
 			cd += 1;
 		}
-		/*if(Input.GetKey("a")) {
+		if(Input.GetKey("a")) {
 			transform.localPosition = new Vector3(-0.2,0,0);
 			transform.rotation = Quaternion.Euler(0,0,90);
 			var shotsfired1 : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
@@ -94,10 +94,10 @@ function pew() {
 				yield WaitForSeconds(0.1f);
 			}
 			nerfed = true;
-			cd += 1;*/
+			cd += 1;
 		}
 	}
-
+}
 function cdreset() {
 	if (hot) {
 		cd = 100;
@@ -110,7 +110,7 @@ function cdreset() {
 function cddown () {
 	if (cool) {
 		if (!Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("d")) {
-			InvokeRepeating("cdminus", 0.5f, 0.5f);
+			InvokeRepeating("cdminus", 0.2f, 0.2f);
 		}
 		cool = false;
 	}

@@ -2,7 +2,7 @@
 public var bossPrefab : GameObject;
 
 function Start () {
-	yield WaitForSeconds(5.0f);
+	yield WaitForSeconds(10.0f);
 	var Boss : GameObject = Instantiate(bossPrefab, transform.position, Quaternion.identity);
 }
 
