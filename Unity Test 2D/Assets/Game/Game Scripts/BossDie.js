@@ -4,6 +4,7 @@ public var hp : int = 100;
 var player : GameObject;
 var spawns : GameObject[];
 var minions : GameObject[];
+
 function Start () {
 	minions = GameObject.FindGameObjectsWithTag("Bad");
 	for (i in minions) {

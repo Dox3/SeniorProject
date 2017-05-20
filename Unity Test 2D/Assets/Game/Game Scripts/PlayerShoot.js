@@ -7,6 +7,8 @@ var cool : boolean = true;
 var hot : boolean = true;
 var speed : int = 1;
 var cd : int = 0;
+var ratedanger : float = 0.02;
+var ratemin : float = 0.05;
 
 function Start () {
 	player = GameObject.FindWithTag("Player");
@@ -34,10 +36,10 @@ function pew() {
 				yield WaitForSeconds(0f);
 			}
 			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(0.05f);
+				yield WaitForSeconds(ratedanger);
 			}
 			else {
-				yield WaitForSeconds(0.1f);
+				yield WaitForSeconds(ratemin);
 			}
 			nerfed = true;
 			cd += 1;
@@ -52,10 +54,10 @@ function pew() {
 				yield WaitForSeconds(0f);
 			}
 			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(0.05f);
+				yield WaitForSeconds(ratedanger);
 			}
 			else {
-				yield WaitForSeconds(0.1f);
+				yield WaitForSeconds(ratemin);
 			}
 			nerfed = true;
 			cd += 1;
@@ -70,10 +72,10 @@ function pew() {
 				yield WaitForSeconds(0f);
 			}
 			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(0.05f);
+				yield WaitForSeconds(ratedanger);
 			}
 			else {
-				yield WaitForSeconds(0.1f);
+				yield WaitForSeconds(ratemin);
 			}
 			nerfed = true;
 			cd += 1;
@@ -88,10 +90,10 @@ function pew() {
 				yield WaitForSeconds(0f);
 			}
 			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(0.05f);
+				yield WaitForSeconds(ratedanger);
 			}
 			else {
-				yield WaitForSeconds(0.1f);
+				yield WaitForSeconds(ratemin);
 			}
 			nerfed = true;
 			cd += 1;

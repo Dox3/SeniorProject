@@ -286,7 +286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 1241974776374572, guid: 08bcc7aa273b9de4a821a2224700d799, type: 2}
-  minions: []
+  slicerPrefab: {fileID: 1608093347825188, guid: c91d611ab5cb88c489355e7a0b54abd7,
+    type: 2}
+  isSlice: 1
 --- !u!1 &773838370 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1587323922441740, guid: 057fcfbaa0b3d494980ae1c6e73cc997,
@@ -1254,7 +1256,12 @@ Prefab:
     - target: {fileID: 212623002847338560, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.84827566
+      value: 0.55862045
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454771175837854, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fcff59e6c1d4674a92fb456d7fc8696, type: 2}

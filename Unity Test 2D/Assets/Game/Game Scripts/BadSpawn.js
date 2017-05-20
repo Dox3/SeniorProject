@@ -1,11 +1,10 @@
 ﻿#pragma strict
+
 public var badPrefab : Transform;
 var overpopulation : GameObject[];
 var limit : boolean = true;
 var stop : boolean = true;
-function Start () {
-	//InvokeRepeating("badfeeling", 1.0f, 1.0f);
-}
+var opengates : float = 0.5;
 
 function Update () {
 	overpopulation = GameObject.FindGameObjectsWithTag("Bad");
@@ -17,8 +16,9 @@ function badfeeling()
 {
 	if (limit && stop) {
 		limit = false;
+		yield WaitForSeconds(opengates);
 		Instantiate(badPrefab, transform.position, transform.rotation);
-		yield WaitForSeconds(1.0f);
+		yield WaitForSeconds(opengates);
 		limit = true;
 	}
 }

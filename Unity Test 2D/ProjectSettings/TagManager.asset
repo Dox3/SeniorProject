@@ -9,6 +9,7 @@ TagManager:
   - tobedestroyed
   - Spawn
   - Boss
+  - Miniboss
   layers:
   - Default
   - TransparentFX

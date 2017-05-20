@@ -1,12 +1,9 @@
 ﻿#pragma strict
+
 public var spawnPrefab : Transform;
 public var spawnRepeat : int = 5;
 var limit : boolean = true;
 var stop : boolean = true;
-
-function Start () {
-	//InvokeRepeating("Spawn", spawnRepeat, spawnRepeat);
-}
 
 function Update () {
 	if (Time.timeSinceLevelLoad >= 5.0f) {
