@@ -198,9 +198,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.3, y: 0.35000002, z: 0.26666668, w: 0.3}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 3.3333333, y: 3.3333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -221,9 +221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  boss: {fileID: 0}
   cd: 1
   speed: 1
   canFire: 1
+  burstfire: 1
 --- !u!114 &114125581186643278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,9 +238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  boss: {fileID: 0}
   cd: 1
   speed: 1
   canFire: 1
+  burstfire: 1
 --- !u!114 &114132445866003500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,9 +255,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  boss: {fileID: 0}
   cd: 1
   speed: 1
   canFire: 1
+  burstfire: 1
 --- !u!114 &114418543699591928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,9 +272,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  boss: {fileID: 0}
   cd: 1
   speed: 1
   canFire: 1
+  burstfire: 1
 --- !u!114 &114891086431925856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -280,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2265bb1ce9ccc9642b2481c786978f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 500
   player: {fileID: 0}
   spawns: []
   minions: []
@@ -329,8 +337,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7111efad5df6cf44c8579015b91314e2, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 013e50779adc3ba4c987ee5413eeb9cd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

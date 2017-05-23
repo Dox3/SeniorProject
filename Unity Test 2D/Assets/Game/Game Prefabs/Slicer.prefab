@@ -23,10 +23,10 @@ GameObject:
   - component: {fileID: 212127083159046504}
   - component: {fileID: 114174485137096752}
   - component: {fileID: 114326425113216508}
-  - component: {fileID: 60367102662634994}
+  - component: {fileID: 60832278157607388}
   m_Layer: 0
   m_Name: Slicer
-  m_TagString: Bad
+  m_TagString: Miniboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60367102662634994
+--- !u!60 &60832278157607388
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -78,7 +78,7 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.18, y: 0.10666667, z: 0.14, w: 0.12666667}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 1, y: 1}
@@ -88,12 +88,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4366095, y: 0.2962962}
-      - {x: 0.03660949, y: -0.08888885}
-      - {x: -0.007407347, y: -0.6074074}
-      - {x: -0.051424343, y: -0.08888892}
-      - {x: -0.4958688, y: 0.29629636}
-      - {x: -0.0074073873, y: -0.007407427}
+    - - {x: 0.12666667, y: -0.07333334}
+      - {x: 0.17333333, y: 0.08}
+      - {x: 0.25333333, y: 0.16666667}
+      - {x: 0.36, y: 0.32}
+      - {x: 0.46, y: 0.44}
+      - {x: 0.48666668, y: 0.47333336}
+      - {x: 0.48666668, y: 0.49333334}
+      - {x: 0.46666667, y: 0.5}
+      - {x: 0.23333333, y: 0.37333333}
+      - {x: 0.13333334, y: 0.34666666}
+      - {x: 0.07333334, y: 0.3866667}
+      - {x: 0.046666667, y: 0.33333334}
+      - {x: -0.02, y: 0.3866667}
+      - {x: -0.08, y: 0.35333335}
+      - {x: -0.16, y: 0.37333333}
+      - {x: -0.42000002, y: 0.50666666}
+      - {x: -0.43333334, y: 0.50666666}
+      - {x: -0.44, y: 0.49333334}
+      - {x: -0.44, y: 0.48000002}
+      - {x: -0.41333336, y: 0.44}
+      - {x: -0.2, y: 0.18666667}
+      - {x: -0.20666668, y: 0.15333334}
+      - {x: -0.14, y: 0.1}
+      - {x: -0.08, y: -0.06666667}
+      - {x: -0.04, y: -0.21333334}
+      - {x: 0, y: -0.5}
+      - {x: 0.013333334, y: -0.5133333}
+      - {x: 0.033333335, y: -0.50666666}
+      - {x: 0.053333335, y: -0.3866667}
+      - {x: 0.1, y: -0.11333334}
 --- !u!114 &114174485137096752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177270733d6cb164b93bd56cb5c0f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 3
+  hp: 5
   player: {fileID: 0}
   spawns: []
   minions: []
@@ -154,8 +178,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5f34896200d9af24ab4e165e9a9612e6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: bdb12e95cfd763e43a5b1a4180dd7adf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
