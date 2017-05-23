@@ -6,6 +6,7 @@ var isSlice : boolean = true;
 
 function Start () {
 	boss();
+	boss2();
 }
 
 function Update () {
