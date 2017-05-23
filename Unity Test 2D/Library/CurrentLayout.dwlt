@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 0
-  controlID: 56179
+  controlID: 11127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 495}
   m_MaxSize: {x: 10002, y: 14045}
   vertical: 1
-  controlID: 56180
+  controlID: 11128
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 56181
+  controlID: 11129
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,9 +367,9 @@ MonoBehaviour:
     height: 439
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 56050000
     m_LastClickedID: 0
-    m_ExpandedIDs: 6469ecffba4defff462bf2ffbc01f3ffe25dfdff2ad6fdffaad8fdff60d9fdff08dafdff9cdbfdffe6fbffff00000000
+    m_ExpandedIDs: 3a4bfdff28bcfdffe6fbffff000000002c260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,19 +529,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Game/Game Prefabs
+    - Assets/Game/Game Scripts/Boss1
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Game/Game Prefabs
+  - Assets/Game/Game Scripts/Boss1
   m_LastFoldersGridSize: 58
   m_LastProjectPath: D:\SeniorProject\Unity Test 2D
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 123}
-    m_SelectedIDs: 72250000
-    m_LastClickedID: 9586
-    m_ExpandedIDs: 00000000e62400005c250000a425000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 65.083336}
+    m_SelectedIDs: 5a250000
+    m_LastClickedID: 9562
+    m_ExpandedIDs: 00000000f42400007c250000cc25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e62400005c250000a425000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000f42400007c250000cc25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 7c1c0000e6040000a21c00000c05000032050000f0040000000000008e3bffff2639efff
+    m_ExpandedInstanceIDs: 7c1c0000e6040000a21c00000c05000032050000f0040000000000008e3bffff2639efff94250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

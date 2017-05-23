@@ -5,20 +5,15 @@ public var slicerPrefab : GameObject;
 var isSlice : boolean = true;
 
 function Start () {
+	boss();
 }
 
 function Update () {
 	slicer();
-	if (Time.time >= 30 && Time.time < 30.01) {
-		boss();
-	}
-	if (Time.time >= 90 && Time.time < 90.01) {
-		boss2();
-	}
 }
 
 function slicer() {
-	if (Time.timeSinceLevelLoad >= 40.0f && isSlice && GameObject.FindWithTag("Boss") == null) {
+	if (Time.timeSinceLevelLoad >= 120.0f && isSlice && GameObject.FindWithTag("Boss") == null) {
 		isSlice = false;
 		var Slicer : GameObject = Instantiate(slicerPrefab, new Vector3(Random.Range(-10,10), Random.Range(-4.5,4.5), 0), Quaternion.identity);
 		var Dicer : GameObject = Instantiate(slicerPrefab, new Vector3(Random.Range(-10,10), Random.Range(-4.5,4.5), 0), Quaternion.identity);
@@ -28,9 +23,11 @@ function slicer() {
 }
 
 function boss () {
+	yield WaitForSeconds(30);
 	var Boss : GameObject = Instantiate(bossPrefab, transform.position, Quaternion.identity);
 }
 
 function boss2 () {
+	yield WaitForSeconds(180);
 	var Boss2 : GameObject = Instantiate(boss2Prefab, transform.position, Quaternion.identity);
 }

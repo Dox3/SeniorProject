@@ -37,9 +37,9 @@ GameObject:
   - component: {fileID: 4939930422070286}
   - component: {fileID: 50451873384817370}
   - component: {fileID: 212000704428988114}
-  - component: {fileID: 114736621373371712}
   - component: {fileID: 60203386286767116}
   - component: {fileID: 114213759745758376}
+  - component: {fileID: 114503522990475854}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Boss
@@ -155,7 +155,6 @@ MonoBehaviour:
   cd: 1
   speed: 1
   canFire: 1
-  burstfire: 0
   roturrent: 0
 --- !u!114 &114213759745758376
 MonoBehaviour:
@@ -168,12 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c239dd79eef60bc4db6b839c5d8a4d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 0}
+  spawnPrefab: {fileID: 1743750347501988, guid: 4fcff59e6c1d4674a92fb456d7fc8696,
+    type: 2}
   rifts: []
   speed: 1
   limit: 1
   stop: 1
---- !u!114 &114736621373371712
+--- !u!114 &114503522990475854
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265298599694758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2265bb1ce9ccc9642b2481c786978f9c, type: 3}
+  m_Script: {fileID: 11500000, guid: f4c539588e47f024688add47e2aa2d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 200
+  hp: 150
   player: {fileID: 0}
   spawns: []
   minions: []
