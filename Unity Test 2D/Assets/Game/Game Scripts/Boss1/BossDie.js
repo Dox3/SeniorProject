@@ -15,7 +15,7 @@ function Start () {
 
 function OnTriggerEnter2D(coll : Collider2D) {
 	if (coll.gameObject.tag == "Player") {
-		player.GetComponent(PlayerDead).hp -= 100;
+		player.GetComponent(PlayerDead).hp = 0;
 	}
 	if (coll.gameObject.tag == "Pew") {
 		Destroy(coll.gameObject);
