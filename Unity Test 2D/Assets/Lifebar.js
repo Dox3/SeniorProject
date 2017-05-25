@@ -9,7 +9,8 @@ function Start () {
 
 function Update () {
 	hp = player.GetComponent(PlayerDead).hp;
-	if (hp <= 100) {
-		this.GetComponent(UI.Slider).value = hp;
-	}
+	/*if (hp > 100) {
+		hp = 100;
+	}*/
+	this.GetComponent(UI.Slider).value = hp;
 }

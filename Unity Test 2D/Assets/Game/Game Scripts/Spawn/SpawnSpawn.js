@@ -25,4 +25,7 @@ function Cease () {
 	if (GameObject.FindWithTag("Player") == null || GameObject.FindWithTag("Boss") != null) {
 		stop = false;
 	}
+	else {
+		stop = true;
+	}
 }

@@ -27,4 +27,7 @@ function Cease () {
 	if (GameObject.FindWithTag("Player") == null || overpopulation.length >= 80 || GameObject.FindWithTag("Boss") != null) {
 		stop = false;
 	}
+	else {
+		stop = true;
+	}
 }

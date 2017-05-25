@@ -25,11 +25,6 @@ function OnTriggerEnter2D(coll : Collider2D) {
 }
 
 function OnDestroy () {
-	spawns = GameObject.FindGameObjectsWithTag("Spawn");
-	player.GetComponent(SpawnSpawn).stop = true;
-	for (i in spawns) {
-		i.GetComponent(BadSpawn).stop = true;
-	}
 	if (player.GetComponent(PlayerDead).hp < 100) {
 		player.GetComponent(PlayerDead).hp = 100;
 	}

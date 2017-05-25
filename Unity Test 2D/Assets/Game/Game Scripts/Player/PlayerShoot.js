@@ -2,11 +2,12 @@
 
 public var pewPrefab : Rigidbody2D;
 public var energy : int = 0;
+public var regen : int = 100;
 var player : GameObject;
 var nerfed : boolean = true;
 var cool : boolean = true;
-var hot : boolean = true;
 var speed : int = 1;
+var hp : int = 0;
 
 function Start () {
 	player = GameObject.FindWithTag("Player");
@@ -16,7 +17,9 @@ function Update () {
 	if (energy < 100) {
 		energydown();
 	}
+	hp = player.GetComponent(PlayerDead).hp;
 	shoot();
+	hprestore();
 }
 
 function shoot() {
@@ -59,6 +62,7 @@ function shoot() {
 		}
 	}
 }
+
 function energydown () {
 	if (cool) {
 		if (!Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("d")) {
@@ -71,8 +75,16 @@ function energydown () {
 		cool = true;
 	}
 }
+
 function energyminus () {
 	if (energy < 100) {
-		energy += 1;
+		energy += 2;
+	}
+}
+
+function hprestore() {
+	if (Input.GetKey("space") && energy >= 1 && hp < 100) {
+		player.GetComponent(PlayerDead).hp += 100;
+		energy = 0;
 	}
 }
