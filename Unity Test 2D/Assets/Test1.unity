@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 96505009}
   - component: {fileID: 96505008}
   m_Layer: 5
-  m_Name: Heatbar
+  m_Name: Energybar
   m_TagString: tobedestroyed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cd: 0
+  energy: 0
 --- !u!114 &96505009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     type: 2}
   slicerPrefab: {fileID: 1940295860885812, guid: 01528e0e1a4d3704a959a7a96ab429e1,
     type: 2}
-  bosslive: 10
+  bosslive: 30
   boss2live: 180
   isSlice: 1
 --- !u!114 &691663548
@@ -795,7 +795,7 @@ Prefab:
     - target: {fileID: 114045814688613490, guid: cc9af138cf1634b48b5cea0e4e7d7abf,
         type: 2}
       propertyPath: delete
-      value: 2.5
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc9af138cf1634b48b5cea0e4e7d7abf, type: 2}

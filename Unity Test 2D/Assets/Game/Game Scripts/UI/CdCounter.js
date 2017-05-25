@@ -3,14 +3,14 @@
 var firescript : GameObject;
 
 function Update () {
-	var cd : int = firescript.GetComponent(PlayerShoot).cd;
-	if (cd <= 0) {
-		cd = 0;
+	var energy : int = firescript.GetComponent(PlayerShoot).energy;
+	if (energy <= 0) {
+		energy = 0;
 	}
-	if (cd >= 0) {
-		this.GetComponent(UI.Text).text = "Heat: " + cd;
+	if (energy >= 0) {
+		this.GetComponent(UI.Text).text = "Energy: " + energy;
 	}
-	if (cd >= 100) {
-		this.GetComponent(UI.Text).text = "OVERHEAT!";
+	if (energy >= 100) {
+		this.GetComponent(UI.Text).text = "MAX";
 	}
 }

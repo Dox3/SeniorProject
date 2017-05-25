@@ -8,8 +8,8 @@ var opengates : float = 0.5;
 
 function Update () {
 	overpopulation = GameObject.FindGameObjectsWithTag("Bad");
-	badfeeling();
 	Cease();
+	badfeeling();
 }
 
 function badfeeling()
@@ -24,7 +24,7 @@ function badfeeling()
 }
 
 function Cease () {
-	if (GameObject.FindWithTag("Player") == null || overpopulation.length >= 250 || GameObject.FindWithTag("Boss") != null) {
+	if (GameObject.FindWithTag("Player") == null || overpopulation.length >= 80 || GameObject.FindWithTag("Boss") != null) {
 		stop = false;
 	}
 }

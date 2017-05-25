@@ -33,5 +33,4 @@ function OnDestroy () {
 	if (player.GetComponent(PlayerDead).hp < 100) {
 		player.GetComponent(PlayerDead).hp = 100;
 	}
-	player.GetComponentInChildren(PlayerShoot).cd = 0;
 }

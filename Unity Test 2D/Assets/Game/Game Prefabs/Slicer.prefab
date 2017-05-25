@@ -73,7 +73,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 1
+  inittime: 0
+  sinceinit: 0
 --- !u!114 &114326425113216508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,7 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177270733d6cb164b93bd56cb5c0f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
+  hp: 10
+  damage: 1
+  damageplayer: 20
   player: {fileID: 0}
   spawns: []
   minions: []

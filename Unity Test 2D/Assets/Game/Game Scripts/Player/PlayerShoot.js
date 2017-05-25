@@ -1,30 +1,25 @@
 ﻿#pragma strict
 
 public var pewPrefab : Rigidbody2D;
-public var cd : int = 0;
+public var energy : int = 0;
 var player : GameObject;
 var nerfed : boolean = true;
 var cool : boolean = true;
 var hot : boolean = true;
 var speed : int = 1;
-var ratedanger : float = 0.02;
-var ratemin : float = 0.05;
 
 function Start () {
 	player = GameObject.FindWithTag("Player");
 }
 
 function Update () {
-	if (cd < 100) {
-		pew();
-		cddown();
+	if (energy < 100) {
+		energydown();
 	}
-	if (cd >= 100) {
-		cdreset();
-	}
+	shoot();
 }
 
-function pew() {
+function shoot() {
 	if(nerfed) {
 		if(Input.GetKey("w")) {
 			transform.localPosition = new Vector3(0,0.45,0);
@@ -32,17 +27,8 @@ function pew() {
 			var shotsfired : Rigidbody2D = Instantiate(pewPrefab, transform.position, Quaternion.identity);
 			shotsfired.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
-			if (player.GetComponent(PlayerDead).hp <= 15) {
-				yield WaitForSeconds(0f);
-			}
-			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(ratedanger);
-			}
-			else {
-				yield WaitForSeconds(ratemin);
-			}
+			yield WaitForSeconds(0.05f);
 			nerfed = true;
-			cd += 1;
 		}
 		if(Input.GetKey("a")) {
 			transform.localPosition = new Vector3(-0.45,0,0);
@@ -50,17 +36,8 @@ function pew() {
 			var shotsfired1 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired1.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
-			if (player.GetComponent(PlayerDead).hp <= 15) {
-				yield WaitForSeconds(0f);
-			}
-			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(ratedanger);
-			}
-			else {
-				yield WaitForSeconds(ratemin);
-			}
+			yield WaitForSeconds(0.05f);
 			nerfed = true;
-			cd += 1;
 		}
 		if(Input.GetKey("s")) {
 			transform.localPosition = new Vector3(0,-0.45,0);
@@ -68,17 +45,8 @@ function pew() {
 			var shotsfired2 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired2.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
-			if (player.GetComponent(PlayerDead).hp <= 15) {
-				yield WaitForSeconds(0f);
-			}
-			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(ratedanger);
-			}
-			else {
-				yield WaitForSeconds(ratemin);
-			}
+			yield WaitForSeconds(0.05f);
 			nerfed = true;
-			cd += 1;
 		}
 		if(Input.GetKey("d")) {
 			transform.localPosition = new Vector3(0.45,0,0);
@@ -86,33 +54,15 @@ function pew() {
 			var shotsfired3 : Rigidbody2D = Instantiate(pewPrefab, transform.position, transform.rotation);
 			shotsfired3.GetComponent.<Rigidbody2D>().AddForce(transform.up * (5 * speed));
 			nerfed = false;
-			if (player.GetComponent(PlayerDead).hp <= 15) {
-				yield WaitForSeconds(0f);
-			}
-			else if (player.GetComponent(PlayerDead).hp <= 50) {
-				yield WaitForSeconds(ratedanger);
-			}
-			else {
-				yield WaitForSeconds(ratemin);
-			}
+			yield WaitForSeconds(0.05f);
 			nerfed = true;
-			cd += 1;
 		}
 	}
 }
-function cdreset() {
-	if (hot) {
-		cd = 100;
-		hot = false;
-		yield WaitForSeconds(3.0f);
-		cd = 0;
-		hot = true;
-	}
-}
-function cddown () {
+function energydown () {
 	if (cool) {
 		if (!Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("d")) {
-			InvokeRepeating("cdminus", 0.2f, 0.2f);
+			InvokeRepeating("energyminus", 0.2f, 0.2f);
 		}
 		cool = false;
 	}
@@ -121,11 +71,8 @@ function cddown () {
 		cool = true;
 	}
 }
-function cdminus () {
-	if (cd < 100) {
-		cd -= 5;
-		if (cd < 0) {
-			cd = 0;
-		}
+function energyminus () {
+	if (energy < 100) {
+		energy += 1;
 	}
 }

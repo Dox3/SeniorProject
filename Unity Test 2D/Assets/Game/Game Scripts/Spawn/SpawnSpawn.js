@@ -6,10 +6,10 @@ var limit : boolean = true;
 var stop : boolean = true;
 
 function Update () {
+	Cease();
 	if (Time.timeSinceLevelLoad >= 5.0f) {
 		Spawn();
 	}
-	Cease();
 }
 
 function Spawn() {
