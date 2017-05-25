@@ -38,8 +38,8 @@ GameObject:
   - component: {fileID: 50068784144148078}
   - component: {fileID: 212015482554716556}
   - component: {fileID: 114987908883627176}
-  - component: {fileID: 61249317252681404}
   - component: {fileID: 114891086431925856}
+  - component: {fileID: 58175052909521422}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -184,8 +184,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61249317252681404
-BoxCollider2D:
+--- !u!58 &58175052909521422
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -196,19 +196,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.3, y: 0.35000002, z: 0.26666668, w: 0.3}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.3333333, y: 3.3333333}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.03, y: 0.19}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
+  m_Radius: 0.35
 --- !u!114 &114070002132399158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 500
+  damage: 1
   player: {fileID: 0}
   spawns: []
   minions: []
@@ -303,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e28c0906c81aa94b814401c1662baf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   target: {fileID: 0}
   speed: 1
 --- !u!212 &212015482554716556

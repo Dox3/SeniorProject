@@ -4,7 +4,7 @@ var player : GameObject;
 var cd : int = 0;
 
 function Start () {
-	player = GameObject.Find("Player");
+	player = GameObject.Find("Fire");
 }
 
 function Update () {

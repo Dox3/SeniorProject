@@ -1,12 +1,12 @@
 ﻿#pragma strict
 
 public var pewPrefab : Rigidbody2D;
+public var cd : int = 0;
 var player : GameObject;
 var nerfed : boolean = true;
 var cool : boolean = true;
 var hot : boolean = true;
 var speed : int = 1;
-var cd : int = 0;
 var ratedanger : float = 0.02;
 var ratemin : float = 0.05;
 

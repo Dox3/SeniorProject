@@ -2,6 +2,8 @@
 public var bossPrefab : GameObject;
 public var boss2Prefab : GameObject;
 public var slicerPrefab : GameObject;
+public var bosslive : int = 30;
+public var boss2live : int = 180;
 var isSlice : boolean = true;
 
 function Start () {
@@ -24,11 +26,13 @@ function slicer() {
 }
 
 function boss () {
-	yield WaitForSeconds(30);
+	yield WaitForSeconds(bosslive);
 	var Boss : GameObject = Instantiate(bossPrefab, transform.position, Quaternion.identity);
+	Boss.name = "Lombaba";
 }
 
 function boss2 () {
-	yield WaitForSeconds(180);
+	yield WaitForSeconds(boss2live);
 	var Boss2 : GameObject = Instantiate(boss2Prefab, transform.position, Quaternion.identity);
+	Boss2.name = "Yyrvynyn";
 }

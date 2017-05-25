@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
-public var hp : int = 200;
+public var hp : int = 500;
+public var damage : int = 1;
 var player : GameObject;
 var spawns : GameObject[];
 var minions : GameObject[];
@@ -14,22 +15,23 @@ function Start () {
 }
 
 function OnTriggerEnter2D(coll : Collider2D) {
-	if (coll.gameObject.tag == "Player") {
-		player.GetComponent(PlayerDead).hp = 0;
-	}
 	if (coll.gameObject.tag == "Pew") {
 		Destroy(coll.gameObject);
-		hp -= 1;
+		hp -= damage;
 		if (hp <= 0) {
 			Destroy(gameObject);
-			spawns = GameObject.FindGameObjectsWithTag("Spawn");
-			player.GetComponent(SpawnSpawn).stop = true;
-			for (i in spawns) {
-				i.GetComponent(BadSpawn).stop = true;
-			}
-			if (player.GetComponent(PlayerDead).hp < 100) {
-				player.GetComponent(PlayerDead).hp = 100;
-			}
 		}
 	}
+}
+
+function OnDestroy () {
+	spawns = GameObject.FindGameObjectsWithTag("Spawn");
+	player.GetComponent(SpawnSpawn).stop = true;
+	for (i in spawns) {
+		i.GetComponent(BadSpawn).stop = true;
+	}
+	if (player.GetComponent(PlayerDead).hp < 100) {
+		player.GetComponent(PlayerDead).hp = 100;
+	}
+	player.GetComponentInChildren(PlayerShoot).cd = 0;
 }

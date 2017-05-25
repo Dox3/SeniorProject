@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 212000704428988114}
   - component: {fileID: 60203386286767116}
   - component: {fileID: 114213759745758376}
-  - component: {fileID: 114503522990475854}
+  - component: {fileID: 114466542792761550}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Boss
@@ -173,7 +173,7 @@ MonoBehaviour:
   speed: 1
   limit: 1
   stop: 1
---- !u!114 &114503522990475854
+--- !u!114 &114466542792761550
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -181,10 +181,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265298599694758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c539588e47f024688add47e2aa2d8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2265bb1ce9ccc9642b2481c786978f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 150
+  damage: 1
   player: {fileID: 0}
   spawns: []
   minions: []
