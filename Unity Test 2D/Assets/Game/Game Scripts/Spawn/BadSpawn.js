@@ -24,7 +24,7 @@ function badfeeling()
 }
 
 function Cease () {
-	if (GameObject.FindWithTag("Player") == null || overpopulation.length >= 80 || GameObject.FindWithTag("Boss") != null) {
+	if (GameObject.FindWithTag("Player") == null || overpopulation.length >= 50 || GameObject.FindWithTag("Boss") != null) {
 		stop = false;
 	}
 	else {

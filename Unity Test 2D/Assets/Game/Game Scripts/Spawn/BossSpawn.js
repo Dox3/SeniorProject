@@ -3,16 +3,22 @@ public var bossPrefab : GameObject;
 public var boss2Prefab : GameObject;
 public var slicerPrefab : GameObject;
 public var bosslive : int = 30;
-public var boss2live : int = 180;
+public var boss2live : int = 150;
 var isSlice : boolean = true;
+var bop : GameObject;
 
 function Start () {
 	boss();
 	boss2();
+	bop = GameObject.Find("BossHPBar");
+	bop.SetActive(false);
 }
 
 function Update () {
 	slicer();
+	if (GameObject.FindWithTag("Boss") != null) {
+		bop.SetActive(true);
+	}
 }
 
 function slicer() {

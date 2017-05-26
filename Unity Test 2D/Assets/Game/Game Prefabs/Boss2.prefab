@@ -184,8 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2265bb1ce9ccc9642b2481c786978f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 150
+  hp: 250
   damage: 1
+  pulsedamage: 30
   player: {fileID: 0}
   spawns: []
   minions: []

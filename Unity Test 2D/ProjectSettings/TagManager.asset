@@ -10,6 +10,7 @@ TagManager:
   - Spawn
   - Boss
   - Miniboss
+  - Pulse
   layers:
   - Default
   - TransparentFX

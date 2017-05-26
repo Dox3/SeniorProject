@@ -3,23 +3,26 @@
 public var pewPrefab : Rigidbody2D;
 public var energy : int = 0;
 public var regen : int = 100;
+public var pulsePrefab : Rigidbody2D;
 var player : GameObject;
 var nerfed : boolean = true;
 var cool : boolean = true;
 var speed : int = 1;
 var hp : int = 0;
+var regencd : boolean = true;
+var regentimer : GameObject;
 
 function Start () {
 	player = GameObject.FindWithTag("Player");
+	InvokeRepeating("energyminus", 0, 0.15f);
+	regentimer = GameObject.Find("HPBoostTimer");
+	regentimer.SetActive(false);
 }
 
 function Update () {
-	if (energy < 100) {
-		energydown();
-	}
 	hp = player.GetComponent(PlayerDead).hp;
 	shoot();
-	hprestore();
+	power();
 }
 
 function shoot() {
@@ -63,10 +66,10 @@ function shoot() {
 	}
 }
 
-function energydown () {
+/*function energydown () {
 	if (cool) {
 		if (!Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("d")) {
-			InvokeRepeating("energyminus", 0.2f, 0.2f);
+			InvokeRepeating("energyminus", 0.1f, 0.1f);
 		}
 		cool = false;
 	}
@@ -74,17 +77,32 @@ function energydown () {
 		CancelInvoke();
 		cool = true;
 	}
-}
+}*/
 
 function energyminus () {
 	if (energy < 100) {
-		energy += 2;
+		energy += 1;
 	}
 }
 
-function hprestore() {
-	if (Input.GetKey("space") && energy >= 1 && hp < 100) {
-		player.GetComponent(PlayerDead).hp += 100;
+function power() {
+	if (Input.GetKey("q") && energy >= 10 && hp < 100 && regencd) {
+		regencd = false;
+		regentimer.SetActive(true);
+		if (energy/2 > (100 - hp)) {
+			energy -= 100 - hp;
+			player.GetComponent(PlayerDead).hp = 100; 
+		}
+		else {
+			player.GetComponent(PlayerDead).hp += energy/2;
+			energy = 0;
+		}
+		yield WaitForSeconds(12.0f);
+		regentimer.SetActive(false);
+		regencd = true;
+	}
+	if (Input.GetKey("e") && energy >= 100) {
+		var pulse : Rigidbody2D = Instantiate(pulsePrefab, GameObject.Find("Player").transform.position, Quaternion.identity);
 		energy = 0;
 	}
 }

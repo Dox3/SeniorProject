@@ -133,7 +133,7 @@ MonoBehaviour:
   overpopulation: []
   limit: 1
   stop: 1
-  opengates: 0.5
+  opengates: 0.3
 --- !u!114 &114738152310510570
 MonoBehaviour:
   m_ObjectHideFlags: 1

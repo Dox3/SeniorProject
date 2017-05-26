@@ -14,18 +14,19 @@ function Start () {
 	player = GameObject.Find("Player");
 }
 
+function Update () {
+	if (hp <= 0) {
+			Destroy(gameObject);
+	}
+}
+
 function OnTriggerEnter2D(coll : Collider2D) {
 	if (coll.gameObject.tag == "Pew") {
 		Destroy(coll.gameObject);
 		hp -= damage;
-		if (hp <= 0) {
-			Destroy(gameObject);
-		}
 	}
 }
 
 function OnDestroy () {
-	if (player.GetComponent(PlayerDead).hp < 100) {
-		player.GetComponent(PlayerDead).hp = 100;
-	}
+	GameObject.Find("BossHPBar").SetActive(false);
 }
