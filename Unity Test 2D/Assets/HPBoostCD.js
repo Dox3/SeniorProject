@@ -3,7 +3,7 @@
 var cd : int;
 
 function OnEnable () {
-	cd = 12;
+	cd = 15;
 	InvokeRepeating("cooldown", 0f, 1.0f);
 }
 

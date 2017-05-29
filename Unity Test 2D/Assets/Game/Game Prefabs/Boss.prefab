@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45ccabca69a229448af4c82b8bfb4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  diePrefab: {fileID: 1009251203167702, guid: 9451f8a095d9eee41934ea1c67dd39bf, type: 2}
   boss: {fileID: 0}
   cd: 1
   speed: 1
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45ccabca69a229448af4c82b8bfb4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  diePrefab: {fileID: 1009251203167702, guid: 9451f8a095d9eee41934ea1c67dd39bf, type: 2}
   boss: {fileID: 0}
   cd: 1
   speed: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45ccabca69a229448af4c82b8bfb4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  diePrefab: {fileID: 1009251203167702, guid: 9451f8a095d9eee41934ea1c67dd39bf, type: 2}
   boss: {fileID: 0}
   cd: 1
   speed: 1
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45ccabca69a229448af4c82b8bfb4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diePrefab: {fileID: 1947571861403882, guid: 5028fb25d35f2df4bbb366d0d9665a17, type: 2}
+  diePrefab: {fileID: 1009251203167702, guid: 9451f8a095d9eee41934ea1c67dd39bf, type: 2}
   boss: {fileID: 0}
   cd: 1
   speed: 1
@@ -280,7 +280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 500
   damage: 1
-  pulsedamage: 30
   player: {fileID: 0}
   spawns: []
   minions: []

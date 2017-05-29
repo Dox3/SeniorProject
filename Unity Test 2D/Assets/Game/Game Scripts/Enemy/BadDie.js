@@ -1,15 +1,14 @@
 ﻿#pragma strict
 
-public var badPrefab : Transform;
 var player : GameObject;
 
 function Start () {
 	player = GameObject.FindWithTag("Player");
 }
 
-function OnCollisionEnter2D(coll: Collision2D) {
+function OnTriggerEnter2D(coll: Collider2D) {
 	if (coll.gameObject.tag == "Pew") {
+		Destroy(coll.gameObject);
 		Destroy(gameObject);
-		//player.GetComponent(PlayerDead).hp += 1;
 	}
 }

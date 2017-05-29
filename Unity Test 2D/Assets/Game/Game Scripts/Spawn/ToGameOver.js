@@ -1,21 +1,35 @@
 ﻿#pragma strict
 
-var dewit : boolean = false;
-
-function Start () {
-
-}
+var isDead : boolean = false;
+var finalboss : boolean = false;
 
 function Update () {
-	notthejediway();
-	if (dewit) {
+	lastbattle();
+	victory();
+	gameover();
+	if (isDead) {
 		SceneManagement.SceneManager.LoadScene("Game Over");
 	}
 }
 
-function notthejediway () {
+function gameover () {
 	if (GameObject.FindWithTag("Player") == null) {
 		yield WaitForSeconds(0.5f);
-		dewit = true;
+		isDead = true;
+	}
+}
+
+function lastbattle() {
+	if (GameObject.Find("Yyrvynyn") != null) {
+		finalboss = true;
+	}
+}
+
+function victory () {
+	if (finalboss == true) {
+		if (GameObject.FindWithTag("Boss") == null) {
+			yield WaitForSeconds(0.5f);
+			SceneManagement.SceneManager.LoadScene("Win Screen");
+		}
 	}
 }

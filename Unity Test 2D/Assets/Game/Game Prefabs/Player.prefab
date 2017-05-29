@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618174753729204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 4402479481980978}
@@ -134,12 +134,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.28
+  m_Radius: 0.1
 --- !u!114 &114353530279805282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,14 +194,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pewPrefab: {fileID: 50470654904002006, guid: 0339507b8d2a9ac40bed3e3acfff3cb4, type: 2}
+  energy: 0
+  regen: 100
+  pulsePrefab: {fileID: 50588683335465734, guid: 98d1ce4d43f7cc74f96b266e3314a0e2,
+    type: 2}
+  godmodePrefab: {fileID: 4382601347287582, guid: b59ce01c215d4d641ab2fe0a1c5d15d7,
+    type: 2}
+  normalPrefab: {fileID: 4178466240551238, guid: 10110b3b71793da41a772adf28985888,
+    type: 2}
   player: {fileID: 0}
   nerfed: 1
   cool: 1
-  hot: 1
   speed: 100
-  cd: 0
-  ratedanger: 0.02
-  ratemin: 0.05
+  hp: 0
+  rate: 0
+  regencd: 1
+  regentimer: {fileID: 0}
+  isOverready: 1
 --- !u!114 &114869408099716242
 MonoBehaviour:
   m_ObjectHideFlags: 1

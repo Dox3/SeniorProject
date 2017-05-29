@@ -8,11 +8,9 @@ function Update () {
 	}
 }
 
-function OnCollisionEnter2D(coll: Collision2D) {
+function OnTriggerEnter2D(coll: Collider2D) {
 	if (coll.gameObject.tag == "Bad") {
 		hp -= 10;
 	}
 }
-
-
 

@@ -156,6 +156,7 @@ MonoBehaviour:
   speed: 1
   canFire: 1
   roturrent: 0
+  rate: 0.01
 --- !u!114 &114213759745758376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 250
   damage: 1
-  pulsedamage: 30
   player: {fileID: 0}
   spawns: []
   minions: []
