@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4cc5835769ab049bd1035787ee6576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: {fileID: 0}
 --- !u!224 &967354180 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224016643923703288, guid: 55c8a123b2035d345a7b06f519f0961f,
@@ -350,7 +351,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
